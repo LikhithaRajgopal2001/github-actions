@@ -4,11 +4,14 @@ jobs:
   first_job:
     runs-on: ubuntu-latest
     steps: 
-    - name: welcome message
-      run: echo "welcome to my first yml file"
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-    - name: list files
-      run: ls 
+      - name: welcome message
+        run: echo "welcome to my first yml file"
 
-    - name: read file
-      run: cat README.md
+      - name: list files
+        run: ls 
+
+      - name: read file
+        run: cat README.md
