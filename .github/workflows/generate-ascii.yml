@@ -10,8 +10,10 @@ jobs:
       - name: list the files
         run: ls -ltra
 
+      - name: Make script permissions
+        run: chmod +x ascii-script.sh
       - name: Execute commands from script
-        run: chmod +x ./ascii-script.sh
+        run: ./ascii-script.sh
       
 
         
