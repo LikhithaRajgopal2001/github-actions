@@ -1,0 +1,14 @@
+name: my first action file
+on: push
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps: 
+    - name: welcome message
+      run: echo "welcome to my first yml file"
+
+    - name: list files
+      run: ls 
+
+    - name: read file
+      run: cat README.md
