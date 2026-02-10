@@ -14,7 +14,7 @@ jobs:
         run: cowsay -f dragon "Run for cover, I am DRAGON... RAWR" >> dragon.txt
     
       - name: Read file
-        run: cat dargon.txt
+        run: cat dragon.txt
 
       - name: list the files
         run: ls -ltra
