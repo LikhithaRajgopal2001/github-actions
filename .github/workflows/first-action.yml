@@ -11,7 +11,7 @@ jobs:
         run: |
           echo "welcome to my first yml file"
           ls -ltra
-          cat README.m
+          cat README.md
 
       - name: Generate ASCII artwork
         run: cowsay -f dragon "Run for cover, I am DRAGON... RAWR" >> dragon.txt
