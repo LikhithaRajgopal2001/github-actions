@@ -11,7 +11,7 @@ jobs:
         os: [ubuntu-latest, windows-latest]
         images: [hello-world, alpine]  #linux os images won't run on windows os to exclude this 
         exclude:
-          - image: alphine
+          - image: alpine
             os: windows-latest
     runs-on: ${{ matrix.os }}
 
