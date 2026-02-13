@@ -7,6 +7,8 @@ on:
 jobs:
   deploy:
     strategy:
+      fail-fast: false #by default it is true it will stop the jobs if one job 
+      max-parallel: 3 #maximum jobs will run at a time (parallel)
       matrix:
         os: [ubuntu-latest, windows-latest]
         images: [hello-world, alpine]  #linux os images won't run on windows os to exclude this 
