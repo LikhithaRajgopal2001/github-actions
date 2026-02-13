@@ -9,8 +9,10 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
-        images: [hello-world, alpine]
-
+        images: [hello-world, alpine]  #linux os images won't run on windows os to exclude this 
+        exclude:
+          - image: alphine
+            os: windows-latest
     runs-on: ${{ matrix.os }}
 
     steps:
